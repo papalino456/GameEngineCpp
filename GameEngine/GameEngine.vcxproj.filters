@@ -4,27 +4,57 @@
     <Filter Include="App">
       <UniqueIdentifier>{2d106714-8b12-42d0-bb31-6ccb56a5cce4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Engine">
+    <Filter Include="GameEngine">
       <UniqueIdentifier>{f961ad88-61f3-4ec9-8f3f-c074984c81cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\WindowSystem">
+      <UniqueIdentifier>{cd80c2e3-73dd-4252-a375-d20599d991c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\GraphicsEngine">
+      <UniqueIdentifier>{37527aad-3082-4abf-a60d-198bb580bf9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\GraphicsEngine\SwapChain">
+      <UniqueIdentifier>{b112db83-3658-4e3a-8bba-359379f24a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\GraphicsEngine\DeviceContext">
+      <UniqueIdentifier>{f777b07e-4df0-4f38-9f04-33c04de4f674}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>App</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="AppWindow.cpp">
       <Filter>App</Filter>
     </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>GameEngine\WindowSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsEngine.cpp">
+      <Filter>GameEngine\GraphicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapChain.cpp">
+      <Filter>GameEngine\GraphicsEngine\SwapChain</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceContext.cpp">
+      <Filter>GameEngine\GraphicsEngine\DeviceContext</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
     <ClInclude Include="AppWindow.h">
       <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>GameEngine\WindowSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsEngine.h">
+      <Filter>GameEngine\GraphicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain.h">
+      <Filter>GameEngine\GraphicsEngine\SwapChain</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceContext.h">
+      <Filter>GameEngine\GraphicsEngine\DeviceContext</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
